@@ -625,6 +625,82 @@ li{font-size:13.5px;color:var(--i70);line-height:1.65;font-weight:300}
 </div>
 
 <div class="sec">
+
+<div class="sec">
+  <div class="sec-ey">Content &amp; Language Decisions</div>
+  <h2>Writing the Interface, <span style="font-weight:300;font-style:italic">Not Just Designing It</span></h2>
+  <p style="max-width:660px;color:var(--i60,#666);margin-bottom:32px">Every label, status, error message, and navigation item in PROTECT was a content decision — made deliberately to match how DAs and clerks actually speak about their work. Legalese out. Plain, action-oriented language in.</p>
+
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px">
+
+    <div style="background:#F8F7FF;border:1px solid #E4DFFF;border-radius:12px;padding:20px">
+      <div style="font-size:10px;font-family:var(--fm);letter-spacing:.12em;text-transform:uppercase;color:#9747FF;margin-bottom:12px">Navigation Labels</div>
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <div style="display:flex;justify-content:space-between;align-items:center;font-size:12px">
+          <span style="color:#999;text-decoration:line-through">Case Management</span>
+          <span style="color:#9747FF">→</span>
+          <span style="color:#1a1a2e;font-weight:600">Cases</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;font-size:12px">
+          <span style="color:#999;text-decoration:line-through">Scheduled Events</span>
+          <span style="color:#9747FF">→</span>
+          <span style="color:#1a1a2e;font-weight:600">Hearings</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;font-size:12px">
+          <span style="color:#999;text-decoration:line-through">Document Submission</span>
+          <span style="color:#9747FF">→</span>
+          <span style="color:#1a1a2e;font-weight:600">eFiling</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;font-size:12px">
+          <span style="color:#999;text-decoration:line-through">Database Search</span>
+          <span style="color:#9747FF">→</span>
+          <span style="color:#1a1a2e;font-weight:600">XCQ Query</span>
+        </div>
+      </div>
+      <p style="font-size:11px;color:#888;margin-top:12px;line-height:1.5">Used existing DA office terminology — not system terminology. Staff recognised navigation immediately without training.</p>
+    </div>
+
+    <div style="background:#F8F7FF;border:1px solid #E4DFFF;border-radius:12px;padding:20px">
+      <div style="font-size:10px;font-family:var(--fm);letter-spacing:.12em;text-transform:uppercase;color:#9747FF;margin-bottom:12px">Status Labels</div>
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <div style="display:flex;align-items:center;gap:8px">
+          <span style="padding:3px 10px;background:#E8F9EF;color:#0D9E5E;border-radius:100px;font-size:11px;font-weight:600">Received</span>
+          <span style="font-size:11px;color:#666">Filing confirmed</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px">
+          <span style="padding:3px 10px;background:#FFF3DC;color:#C07000;border-radius:100px;font-size:11px;font-weight:600">Pending Review</span>
+          <span style="font-size:11px;color:#666">Awaiting DA action</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px">
+          <span style="padding:3px 10px;background:#FDECEA;color:#D93025;border-radius:100px;font-size:11px;font-weight:600">Returned</span>
+          <span style="font-size:11px;color:#666">Needs correction</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px">
+          <span style="padding:3px 10px;background:#EBF2FF;color:#1A6FE8;border-radius:100px;font-size:11px;font-weight:600">In Progress</span>
+          <span style="font-size:11px;color:#666">Active case</span>
+        </div>
+      </div>
+      <p style="font-size:11px;color:#888;margin-top:12px;line-height:1.5">Avoided technical states like "Processing" or "Queued." Each status answers: <em>what does this mean for me right now?</em></p>
+    </div>
+
+    <div style="background:#F8F7FF;border:1px solid #E4DFFF;border-radius:12px;padding:20px">
+      <div style="font-size:10px;font-family:var(--fm);letter-spacing:.12em;text-transform:uppercase;color:#9747FF;margin-bottom:12px">Error Messages</div>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <div style="padding:10px;background:#FDECEA;border-radius:8px;border-left:3px solid #D93025">
+          <div style="font-size:11px;color:#999;text-decoration:line-through;margin-bottom:4px">Error: Field validation failed (ERR_422)</div>
+          <div style="font-size:12px;color:#D93025;font-weight:600">Charge date can't be before the arrest date.</div>
+        </div>
+        <div style="padding:10px;background:#FDECEA;border-radius:8px;border-left:3px solid #D93025">
+          <div style="font-size:11px;color:#999;text-decoration:line-through;margin-bottom:4px">Required field missing</div>
+          <div style="font-size:12px;color:#D93025;font-weight:600">Add a statute before filing — it's required for court records.</div>
+        </div>
+      </div>
+      <p style="font-size:11px;color:#888;margin-top:12px;line-height:1.5">Every error explains <em>what went wrong</em> and <em>what to do next</em> — in plain English, not system codes.</p>
+    </div>
+
+  </div>
+</div>
+
   <div class="sec-ey">Outcomes</div>
   <h2 class="sec-h">What the work <em>actually delivered</em></h2>
   <div class="outs">

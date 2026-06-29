@@ -1430,6 +1430,84 @@ Review?</text><rect x="648" y="260" width="100" height="40" rx="10" fill="#E6F7F
 
   <div class="divider"></div>
 
+  <div class="divider"></div>
+
+  <div class="cs-section">
+    <div class="cs-eyebrow">Content &amp; Language Decisions</div>
+    <h2 class="cs-title">Writing the Interface, <em>Not Just Designing It</em></h2>
+    <div class="cs-body"><p>Every field label, button, status tag, and error message was a deliberate content decision. Finance directors speak in fiscal years and budget categories — not database field names. The language had to match their mental model exactly.</p></div>
+
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:32px">
+
+      <div style="background:#F8F7FF;border:1px solid #E4DFFF;border-radius:12px;padding:20px">
+        <div style="font-size:10px;font-family:var(--fm);letter-spacing:.12em;text-transform:uppercase;color:#9747FF;margin-bottom:12px">Field Labels</div>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <div style="display:flex;justify-content:space-between;align-items:center;font-size:12px">
+            <span style="color:#999;text-decoration:line-through">revenue_category_id</span>
+            <span style="color:#9747FF">→</span>
+            <span style="color:#1a1a2e;font-weight:600">Revenue Type</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:center;font-size:12px">
+            <span style="color:#999;text-decoration:line-through">fiscal_period_ref</span>
+            <span style="color:#9747FF">→</span>
+            <span style="color:#1a1a2e;font-weight:600">Fiscal Year</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:center;font-size:12px">
+            <span style="color:#999;text-decoration:line-through">org_unit_code</span>
+            <span style="color:#9747FF">→</span>
+            <span style="color:#1a1a2e;font-weight:600">District</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:center;font-size:12px">
+            <span style="color:#999;text-decoration:line-through">expenditure_sub_obj</span>
+            <span style="color:#9747FF">→</span>
+            <span style="color:#1a1a2e;font-weight:600">Spending Category</span>
+          </div>
+        </div>
+        <p style="font-size:11px;color:#888;margin-top:12px;line-height:1.5">Replaced database field names with plain language. Finance directors recognised every label without a glossary.</p>
+      </div>
+
+      <div style="background:#F8F7FF;border:1px solid #E4DFFF;border-radius:12px;padding:20px">
+        <div style="font-size:10px;font-family:var(--fm);letter-spacing:.12em;text-transform:uppercase;color:#9747FF;margin-bottom:12px">Submission Status Tags</div>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <div style="display:flex;align-items:center;gap:8px">
+            <span style="padding:3px 10px;background:#E8F9EF;color:#0D9E5E;border-radius:100px;font-size:11px;font-weight:600">Submitted</span>
+            <span style="font-size:11px;color:#666">Sent to DESE</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:8px">
+            <span style="padding:3px 10px;background:#FFF3DC;color:#C07000;border-radius:100px;font-size:11px;font-weight:600">In Review</span>
+            <span style="font-size:11px;color:#666">DESE reviewing</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:8px">
+            <span style="padding:3px 10px;background:#FDECEA;color:#D93025;border-radius:100px;font-size:11px;font-weight:600">Needs Changes</span>
+            <span style="font-size:11px;color:#666">Returned by DESE</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:8px">
+            <span style="padding:3px 10px;background:#EBF2FF;color:#1A6FE8;border-radius:100px;font-size:11px;font-weight:600">Approved ✓</span>
+            <span style="font-size:11px;color:#666">Cycle complete</span>
+          </div>
+        </div>
+        <p style="font-size:11px;color:#888;margin-top:12px;line-height:1.5">Each tag answers: <em>"Where does my submission stand right now?"</em></p>
+      </div>
+
+      <div style="background:#F8F7FF;border:1px solid #E4DFFF;border-radius:12px;padding:20px">
+        <div style="font-size:10px;font-family:var(--fm);letter-spacing:.12em;text-transform:uppercase;color:#9747FF;margin-bottom:12px">Validation Messages</div>
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <div style="padding:10px;background:#FDECEA;border-radius:8px;border-left:3px solid #D93025">
+            <div style="font-size:11px;color:#999;text-decoration:line-through;margin-bottom:4px">Value out of range</div>
+            <div style="font-size:12px;color:#D93025;font-weight:600">Total expenditures exceed your approved budget for FY 2024–25.</div>
+          </div>
+          <div style="padding:10px;background:#FFF3DC;border-radius:8px;border-left:3px solid #C07000">
+            <div style="font-size:11px;color:#999;text-decoration:line-through;margin-bottom:4px">Required field empty</div>
+            <div style="font-size:12px;color:#C07000;font-weight:600">Add your fund source before saving — DESE requires this for state reporting.</div>
+          </div>
+        </div>
+        <p style="font-size:11px;color:#888;margin-top:12px;line-height:1.5">Errors explain the <em>consequence</em>, not just the problem. Users knew exactly what to fix and why.</p>
+      </div>
+
+    </div>
+  </div>
+
+
   <!-- OUTCOMES -->
   <div class="cs-section">
     <div class="cs-eyebrow">Outcomes</div>
